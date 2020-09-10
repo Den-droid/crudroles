@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+        <property name="hibernate.connection.url">jdbc:postgresql://91.238.103.45/pv824</property> <!-- BD Mane -->
+        <property name="hibernate.connection.username">max_user</property> <!-- DB User -->
+        <property name="hibernate.connection.password">Qjpewd234Rede(hu</property> <!-- DB Password -->
+
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- DB Dialect -->
+        <property name="hbm2ddl.auto">update</property> <!-- create / create-drop / update -->
+
+        <property name="show_sql">true</property> <!-- Show SQL in console -->
+        <property name="format_sql">true</property> <!-- Show SQL formatted -->
+
+
+        <!--<property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mariadb://localhost:3306/homework3db</property>
+        <property name="hibernate.connection.username">root</property> -->
+        <!--        <property name="hibernate.connection.password">Qwerty1-</property>-->
+        <!--
+        <property name="hibernate.dialect">org.hibernate.dialect.MariaDBDialect</property>
+
+        <property name="hibernate.connection.CharSet">utf8</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        -->
+
+    </session-factory>
+</hibernate-configuration>
